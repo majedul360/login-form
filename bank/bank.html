@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bank</title>
+    <!-- tailwind css link  -->
+    <link rel="stylesheet" href="../output/style.css" />
+  </head>
+  <body class="w-[80rem] mx-auto">
+    <h1 id="bank" class="text-black-500 text-center capitalize text-5xl mt-2">
+      welcome to bank
+    </h1>
+    <div class="grid grid-cols-3 gap-4 my-8">
+      <div class="bg-green-400 p-8">
+        <h3 class="text-3xl capitalize">deposite</h3>
+        <h4 class="text-3xl mt-2 text-white">$<span id="deposite">00</span></h4>
+      </div>
+      <div class="bg-pink-400 p-8">
+        <h3 class="text-3xl capitalize">withdraw</h3>
+        <h4 class="text-3xl mt-2 text-white">
+          $ <span id="withdraw">00</span>
+        </h4>
+      </div>
+      <div class="bg-yellow-400 p-8">
+        <h3 class="text-3xl capitalize">balance</h3>
+        <h4 class="text-3xl mt-2 text-white">
+          $<span id="balance">1000</span>
+        </h4>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+      <div class="mt-8 text-center bg-sky-500 p-8">
+        <input
+          id="deposite-input-field"
+          class="w-full border-2 border-black mb-4 px-4 py-2"
+          type="number"
+          placeholder="enter your amount"
+        />
+        <button
+          id="deposite-btn"
+          class="inline-block bg-black px-8 py-2 text-white text-2xl rounded"
+        >
+          deposite
+        </button>
+      </div>
+      <div class="mt-8 text-center bg-sky-500 p-8">
+        <input
+          id="withdraw-input-field"
+          class="w-full border-2 border-black mb-4 px-4 py-2"
+          type="number"
+          placeholder="enter your amount"
+        />
+        <button
+          id="withdraw-btn"
+          class="inline-block bg-black px-8 py-2 text-white text-2xl rounded"
+        >
+          withdraw
+        </button>
+      </div>
+    </div>
+    <!-- custom js  -->
+    <script src="../js/bank.js"></script>
+  </body>
+</html>

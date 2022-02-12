@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice bank</title>
+    <!-- tailwind css link  -->
+    <link rel="stylesheet" href="output/style.css" />
+  </head>
+  <body class="h-100vh flex items-center justify-center bg-sky-500">
+    <div class="login-container w-full">
+      <div class="p-8 bg-white max-w-[35rem] mx-auto">
+        <h3 class="text-center text-black text-4xl mb-8">login</h3>
+        <form action="" onsubmit="return formValidation()">
+          <input
+            class="w-full border-2 border-black py-2 px-4"
+            id="name"
+            type="text"
+            placeholder="user name"
+          />
+          <p class="py-2 text-red-500" id="name-error"></p>
+          <input
+            class="w-full border-2 border-black py-2 px-4"
+            id="password"
+            type="password"
+            placeholder="password"
+          />
+          <p class="py-2 text-red-500" id="password-error"></p>
+          <input
+            class="w-full bg-sky-500 py-2 px-4 text-white text-2xl cursor-pointer"
+            id="login-btn"
+            type="submit"
+            value="login"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- custom js  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
